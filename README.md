@@ -33,7 +33,7 @@ sudo apt install openjdk-11-jdk
 
 Testear la versión instalada de JAVA:
 ```linux
-java --version
+java -version
 ```
 
 cambiar de versión de JAVA instalada:

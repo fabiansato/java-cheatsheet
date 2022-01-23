@@ -108,5 +108,28 @@ Seguro te diste cuenta que siempre debemos escribir el tipo de dato de nuestras 
 char letter = 'a';
 char anotherLetter = '\u03AF';
 //boolean
+boolean boleano = true;
+// nueva forma con var
 var booleano = false;
 ```
+
+### como cargar variables con var (desde JAVA 10):
+```java
+var salary = 1000; // INT
+var pension = salary * 0.03; // DOUBLE
+var totalSalary = salary - pension; // DOUBLE
+```
+
+## Operadores de asignación:
+
+• +=: a += b es equivalente a a = a + b
+• -=: a -= b es equivalente a a = a - b
+• *=: a *= b es equivalente a a = a * b
+• /=: a /= b es equivalente a a = a / b
+• %=: a %= b es equivalente a a = a % b
+
+## Operadores de incremento:
+++: i++ es equivalente a i = i + 1
+--: i-- es equivalente a i = i - 1
+
+

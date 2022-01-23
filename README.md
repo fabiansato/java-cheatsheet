@@ -123,13 +123,19 @@ var totalSalary = salary - pension; // DOUBLE
 ## Operadores de asignación:
 
 • +=: a += b es equivalente a a = a + b
+
 • -=: a -= b es equivalente a a = a - b
+
 • *=: a *= b es equivalente a a = a * b
+
 • /=: a /= b es equivalente a a = a / b
+
 • %=: a %= b es equivalente a a = a % b
+
 
 ## Operadores de incremento:
 ++: i++ es equivalente a i = i + 1
+
 --: i-- es equivalente a i = i - 1
 
 

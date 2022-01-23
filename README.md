@@ -40,3 +40,17 @@ cambiar de versión de JAVA instalada:
 ```linux
 sudo update-alternatives --config java
 ```
+-----------------
+# Intellij Idea atajos
+
+## main
+```java
+public static void main(String[] args) {
+```
+
+
+## sout
+```java
+  System.out.println();
+```
+

@@ -160,3 +160,18 @@ Math.PI * Math.pow(r, 2)
 // Volumen de una esfera ( (4/3) * PI * r^3):
 (4/3) * Math.PI * Math.pow(r, 3)
 ```
+
+## Cast en variables: Estimación y Exactitud
+estimación
+```java
+Math.sqrt(3) // 1.7320508075688772
+(int) Math.sqrt(3) // 1
+```
+exactitud:
+```java
+int a = 30;
+int b = 12;
+
+a / b // 2
+(double) a / b // 2.5
+```

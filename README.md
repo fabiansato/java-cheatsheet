@@ -1,7 +1,5 @@
 # java-cheatsheet
- 
-
-------------------------------
+-------------------
 ## Instalación en Linux
 
 ```linux
@@ -56,13 +54,7 @@ public static void main(String[] args) {
 
 -----------------
 ## Tipos de datos numericos:
-Tipos de datos para números enteros (sin decimales):
 
-• byte: Ocupa 1 byte de memoria y su rango es de -128 hasta 127.	
-• short: Ocupa 2 bytes de memoria y su rango es de -32,768 hasta 32,727.	
-• int: Ocupa 4 bytes de memoria y su rango es de -2,147,483,648 hasta 2,147,483,647. 	
-	Es muy cómodo de usar, ya que no es tan pequeño para que no quepan nuestros números ni tan grande como para desperdiciar mucha memoria. Puede almacenar hasta 10 dígitos.	
-• long: Ocupa 8 bytes de memoria y su rango es de -9,223,372,036,854,775,808 hasta 9,223,372,036,854,775,807. Para diferenciarlo de un tipo de dato long debemos terminar el número con la letra L.
 	
 Por ejemplo:
 
@@ -76,12 +68,6 @@ Int n = 1234567890;
 Long nL = 123456789012345L;
 ```
 
-Tipos de datos para números flotantes (con decimales):
-
-• float: Ocupan 4 bytes de memoria y su rango es de 1.40129846432481707e-45 hasta 3.40282346638528860e+38. Así como long, debemos colocar una letra F al final.
-	
-• double: Ocupan 8 bytes de memoria y su rango es de 4.94065645841246544e-324d hasta 1.79769313486231570e+308d.
-	
 Por ejemplo:
 // Double:
 ```java
@@ -93,15 +79,16 @@ Double nD = 123.456123456;
 Float nF = 123.456F;
 ```
 
+### como cargar variables con var (desde JAVA 10):
+```java
+var salary = 1000; // INT
+var pension = salary * 0.03; // DOUBLE
+var totalSalary = salary - pension; // DOUBLE
+```
 
 -----------------
 ## Tipos de datos char y boolean
 
-
-char: Ocupa 2 bytes y solo puede almacenar 1 dígito, debemos usar comillas simples en vez de comillas dobles.
-boolean: Son un tipo de dato lógico, solo aceptan los valores true y false. También ocupa 2 bytes y almacena únicamente 1 dígito.
-
-Seguro te diste cuenta que siempre debemos escribir el tipo de dato de nuestras variables antes de definir su nombre y valor. Pero esto cambia a partir de Java 10: solo debemos escribir la palabra reservada var y Java definirá el tipo de dato de nuestras variables automáticamente:
 
 ```java
 //chars
@@ -113,12 +100,6 @@ boolean boleano = true;
 var booleano = false;
 ```
 
-### como cargar variables con var (desde JAVA 10):
-```java
-var salary = 1000; // INT
-var pension = salary * 0.03; // DOUBLE
-var totalSalary = salary - pension; // DOUBLE
-```
 
 ## Operadores de asignación:
 
@@ -138,7 +119,7 @@ var totalSalary = salary - pension; // DOUBLE
 
 --: i-- es equivalente a i = i - 1
 
-# Numeros 
+# Operaciones matemáticas
 ```java
 Math.PI // 3.141592653589793
 Math.E // 2.718281828459045
@@ -175,3 +156,69 @@ int b = 12;
 a / b // 2
 (double) a / b // 2.5
 ```
+CONVERSIONES ENTRE TIPOS
+
+otro ejemplo:
+```java
+int arroba = 64;
+char aa = (char)arroba;
+System.out.println(aa);
+```
+
+## ParseInt 
+Para el caso especial de convertir un String a cualquier otro tipo de dato, Java dispone del método parse con sintaxis:
+**Tipo.parseTipo(cadena)**
+
+```java
+String edad = "18"
+int edadN = Integer.parseInt(edad);
+```
+
+
+## No perdemos información al pasar
+        De char —> int.
+        De byte —> short —> int —> long
+        De int —> double
+        De float —> double
+    PERDEMOS INFORMACIÓN
+        De int —> float
+        De long —> float
+        De long —> double
+		
+		
+## Conversión Automatica::.
+byte -> short
+short -> int
+char -> int
+int -> long
+long -> float
+float -> double
+
+.::Cast Necesario::.
+double -> float
+float -> long
+long -> int
+int -> short
+short -> byte
+
+char <-> byte
+char <-> short
+int -> char
+
+## Array
+
+### cargar un array
+
+ ```java
+int[] ar = new int[]{ 1,2,3,4,5,6,7,8,9,10 }; //carga un array
+```
+
+### recorrer un array
+
+```java
+for(int i=0;i<ar.length;i++){ //recorre el array
+        sum+=ar[i];
+        }
+```
+		
+		
